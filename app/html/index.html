@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+@@include('head.html') 
+</head>
+<body>
+
+<!-- head -->
+@@include('head-block.html') 
+<!-- head -->
+
+<div class="main-cont">
+  <div class="container-fluid">
+    <div class="row">
+      
+      <!-- main-cont-left -->
+      	@@include('left-menu.html') 
+      <!-- main-cont-left -->
+      
+      <div class="col-md-1 col-sm-1 col-xs-1 "></div> 
+
+      <!-- main-cont-right -->
+        <div class="main-cont-right col-md-11 col-md-11 col-sm-11 col-xs-11">
+						<div class="main-cont-right-wraper">
+	           	<!-- breadcrumb -->
+	            	@@include('breadcrumb-table.html')
+	            <!-- breadcrumb -->
+
+	            <!-- main-cont-right-inner -->
+	            <div class="main-cont-right-inner row">
+	              <div class="col-md-12">
+	                
+	                <!-- ###### add class active-icon to circle-button -> for active icon ##### -->
+	                <!-- icon-line -->
+	                <div class="flex-start m25_0">
+	                  <div class="circle-button active-icon">
+	                    <a href="#" class="IconEditNormal50"></a>
+	                  </div>
+	                  <div class="circle-button ">
+	                    <a href="#" class="IconDeleteNormal50"></a>
+	                  </div>
+	                  <div class="circle-button">
+	                    <a href="#" class="IconPrintNormal50"></a>
+	                  </div>
+	                  <button type="button" class="btn btn-primary mr25">Предложить корректировку</button>
+	                  <button type="button" class="btn btn-primary">Экспорт</button> 
+	                </div>
+	                <!-- icon-line -->
+	              </div>
+	            </div>
+	            <!-- main-cont-right-inner -->
+	             <p class="fz18 fw600 w60per">
+	                Услуга ITS001.001.04: <br>
+	                «Предоставление сервисов аутентификации и авторизации на персональных компьютерах 
+	                и доступа к сетевым ресурсам и автоматизированным системам»
+	             </p>
+							 
+							 <!-- table -->
+	             <table class="table table-hover first-col-bold border-around mb40 w60per">
+	               <tbody>
+	                 <tr>
+	                   <td>Краткое описание функциональности:</td>
+	                   <td>
+	                     Краткое описание функциональности:Установка ПК,  а также программного обеспечения в части операционной системы, драйверов,базового офисного и другого стандартного ПО. 
+	                    Поддержка аппаратной части рабочих мест пользователей. Подключение к ЛВС Банка России.
+	                    Организация и сопровождение гарантийного и послегарантийного ремонта ПК.
+	                   </td>
+	                 </tr>
+	                 <tr>
+	                   <td>Заказчик услуги (сервиса):</td>
+	                   <td>ДИТ</td>
+	                 </tr>
+	                 <tr>
+	                   <td>Подразделения ЦБ РФ, использующие услугу:</td>
+	                   <td>Структурные подразделения ЦА БР</td>
+	                 </tr>
+	                 <tr>
+	                   <td>Время предоставления:</td>
+	                   <td>09:00 - 18:00  РД</td>
+	                 </tr>
+	                 <tr>
+	                   <td>Режим недоступности:</td>
+	                   <td>09:00 - 18:00  РД</td>
+	                 </tr>
+	                 <tr>
+	                   <td>IT решение (IT система) поддерживающее услугу:</td>
+	                   <td>Служба поддержки базового рабочего места сотрудников...</td>
+	                 </tr>
+	                 <tr>
+	                   <td>Критичность:</td>
+	                   <td>Да</td>
+	                 </tr>
+	               </tbody>
+	             </table>
+							<!-- table -->
+
+	             <p class="fz18 fw600">
+	               Связанные соглашения:
+	             </p>
+								<button type="button" class="btn btn-primary mr25" id="export" onclick="ExportToXML()">Экспорт</button>
+
+		             <!-- icon-line -->
+		                <div class="flex-start m25_0">
+											  <div class="circle-button button-edit button-href-checkbox">
+											    <a href="page.php?" class="IconEditNormal50"></a>
+											  </div>
+											  <div class="circle-button button-delete button-href-checkbox">
+											    <a href="page.php?" class="IconDeleteNormal50"></a>
+											  </div>
+											  <div class="circle-button button-print button-href-checkbox">
+											    <a href="page.php?" class="IconPrintNormal50"></a>
+											  </div>
+											</div>
+		            <!-- icon-line -->
+	             
+		            <!-- table-tree -->
+										@@include('table-tree.html') 
+		            <!-- table-tree -->
+
+		            
+					</div>	
+      	</div>
+      <div class="clearfix"></div>
+      <!-- main-cont-right -->
+     
+    </div>
+  </div>
+</div> 
+ 
+
+
+@@include('script.html') 
+</body>
+</html>
+
+
+

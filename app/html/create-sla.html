@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+@@include('head.html') 
+</head>
+<body>
+
+<!-- head -->
+@@include('head-block.html') 
+<!-- head -->
+
+<div class="main-cont">
+  <div class="container-fluid">
+    <div class="row">
+      
+      <!-- main-cont-left -->
+      	@@include('left-menu.html') 
+      <!-- main-cont-left -->
+
+      
+      <div class="col-md-1 col-sm-1 col-xs-1 "></div> 
+
+
+      <!-- main-cont-right -->
+        <div class="main-cont-right col-md-11 col-md-11 col-sm-11 col-xs-11">
+						<div class="main-cont-right-wraper">
+	            <!-- breadcrumb -->
+	           		@@include('breadcrumb.html')
+	            <!-- breadcrumb -->
+							<div class="row row-flex">
+								<div class="col-md-8 main-cont-right-wraper-left">
+
+	                	<!-- top-part-form -->
+	                	<div class="form-group m25_0">
+	                		<label for="">Название SLA</label>
+	                		<input type="text" class="form-control w60per" id="" >
+	                		<label for="">Описание:</label>
+	                		<textarea  class="form-control" rows="3" required="required"></textarea> 
+	                	</div>
+	                	<!-- top-part-form -->
+
+										<div class="row">
+											<div class="col-md-6">
+												<!-- item-select -->
+		                			<label for="">Статус:</label>
+		                			<select name="" class="form-control" required="required">
+		                				<option value="">Новая</option>
+		                			</select>
+		                		<!-- item-select -->
+											</div>
+											<div class="col-md-6">
+												<!-- item-select -->
+		                			<label for="">Категория:</label>
+		                			<select name="" class="form-control" required="required">
+		                				<option value="">Новая</option>
+		                			</select>
+		                		<!-- item-select -->
+											</div>
+										</div>
+
+										<div class="row">
+											<div class="col-md-4">
+												<!-- item-select -->
+		                			<label for="" class="fz11">Время восстановления доступности:</label>
+		                			<select name="" class="form-control" required="required">
+		                				<option value="">Новая</option>
+		                			</select>
+		                		<!-- item-select -->
+											</div>
+											<div class="col-md-4">
+												<!-- item-select -->
+		                			<label for="" class="fz11">Целевая доступность:</label>
+		                			<select name="" class="form-control" required="required">
+		                				<option value="">Новая</option>
+		                			</select>
+		                		<!-- item-select -->
+											</div>
+											<div class="col-md-4">
+												<!-- item-select -->
+		                			<label for="" class="fz11">Максимальный интервал потери данных после восстановления:</label>
+		                			<select name="" class="form-control" required="required">
+		                				<option value="">Новая</option>
+		                			</select>
+		                		<!-- item-select -->
+											</div>
+										</div>
+
+
+	                	<div class="row">
+
+	                	<!-- left-column -->
+	                		<div class="col-md-6">
+		                		<!-- item-date-event -->
+		                			<label for="">Дата начала действий:</label>
+		                			<input type="text" class="form-control date-event"  >
+		                		<!-- item-date-event -->
+
+		                		<!-- item-date-event -->
+		                			<label for="">Дата окончания действий: </label>
+		                			<input type="text" class="form-control date-event"  >
+		                		<!-- item-date-event -->
+
+		                		<!-- item-input -->
+			                	<div class="form-group m25_0">
+			                		<label for="">Заказчик</label>
+			                		<input type="text" class="form-control " id="" >
+			                		
+			                	</div>
+	                			<!-- item-input -->
+
+		                		<label for="">Время предоставления</label>
+
+		                		<div class="inline-input-row">
+			                		<input type="checkbox" value="">
+			                		<label>Время не меняется ежедневно.</label>
+		                		</div>
+												
+												<!--######## For disable line use class disable-inline-input-row ########-->
+												<!-- inline-input-row-datepick -->
+			                		<div class="inline-input-row-datepick disable-inline-input-row">
+			                			<label >Сервис доступен с </label> 
+			                			<input type="text" name="" id="" class="form-control date-event-hours" value=""  >
+				                			<label >до</label> 
+				                			<input type="text" name="" id="" class="form-control date-event-hours" value=""  >
+			                		</div>
+												<!-- inline-input-row-datepick -->
+
+		                		<div class="inline-input-row">
+			                		<input type="checkbox" value="">
+			                		<label>Время изменяется по дням недели:</label>
+		                		</div>
+
+												<!-- Group-date-select -->
+												<div class="group-date-select">
+		                			<div class="inline-input-row-datepick">
+		                			<!-- item-row -->
+		                				<input type="checkbox" value="">
+			                			<label class="inline-input-row-datepick-date">Пн</label> 
+			                			<label >c</label> 
+			                			<input type="text" name="" id="" class="form-control date-event-hours" value=""  >
+				                			<label >до</label> 
+				                			<input type="text" name="" id="" class="form-control date-event-hours" value=""  >
+		                			<!-- item-row -->
+		                			</div>
+
+													<div class="inline-input-row-datepick">
+		                			<!-- item-row -->
+		                				<input type="checkbox" value="">
+			                			<label class="inline-input-row-datepick-date">Вт</label> 
+			                			<label >c</label> 
+			                			<input type="text" name="" id="" class="form-control date-event-hours" value=""  >
+				                			<label >до</label> 
+				                			<input type="text" name="" id="" class="form-control date-event-hours" value=""  >
+		                			<!-- item-row -->
+		                			</div>
+
+													<div class="inline-input-row-datepick">
+		                			<!-- item-row -->
+		                				<input type="checkbox" value="">
+			                			<label class="inline-input-row-datepick-date">Ср</label> 
+			                			<label >c</label> 
+			                			<input type="text" name="" id="" class="form-control date-event-hours" value=""  >
+				                			<label >до</label> 
+				                			<input type="text" name="" id="" class="form-control date-event-hours" value=""  >
+		                			<!-- item-row -->
+		                			</div>
+
+													<div class="inline-input-row-datepick">
+		                			<!-- item-row -->
+		                				<input type="checkbox" value="">
+			                			<label class="inline-input-row-datepick-date">Чт</label> 
+			                			<label >c</label> 
+			                			<input type="text" name="" id="" class="form-control date-event-hours" value=""  >
+				                			<label >до</label> 
+				                			<input type="text" name="" id="" class="form-control date-event-hours" value=""  >
+		                			<!-- item-row -->
+		                			</div>
+
+													<div class="inline-input-row-datepick">
+		                			<!-- item-row -->
+		                				<input type="checkbox" value="">
+			                			<label class="inline-input-row-datepick-date">Пт</label> 
+			                			<label >c</label> 
+			                			<input type="text" name="" id="" class="form-control date-event-hours" value=""  >
+				                			<label >до</label> 
+				                			<input type="text" name="" id="" class="form-control date-event-hours" value=""  >
+		                			<!-- item-row -->
+		                			</div>
+
+													<div class="inline-input-row-datepick">
+		                			<!-- item-row -->
+		                				<input type="checkbox" value="">
+			                			<label class="inline-input-row-datepick-date">Сб</label> 
+			                			<label >c</label> 
+			                			<input type="text" name="" id="" class="form-control date-event-hours" value=""  >
+				                			<label >до</label> 
+				                			<input type="text" name="" id="" class="form-control date-event-hours" value=""  >
+		                			<!-- item-row -->
+		                			</div>
+
+													<div class="inline-input-row-datepick">
+		                			<!-- item-row -->
+		                				<input type="checkbox" value="">
+			                			<label class="inline-input-row-datepick-date">Вс</label> 
+			                			<label >c</label> 
+			                			<input type="text" name="" id="" class="form-control date-event-hours" value=""  >
+				                			<label >до</label> 
+				                			<input type="text" name="" id="" class="form-control date-event-hours" value=""  >
+		                			<!-- item-row -->
+		                			</div>
+		                		</div>
+												<!-- Group-date-select -->
+		                		
+		                		<!-- item-select -->
+		                			<label for="">IT решение (IT система) поддерживающее услугу: </label>
+		                			<select name="" class="form-control" required="required">
+		                				<option value="">Служба поддержки базового рабочего места сотрудников... </option>
+		                			</select>
+		                		<!-- item-select -->
+
+		                		<!-- radio-select -->
+		                			<div class="inline-input-row-radio">
+		                				<label for="">Критичность </label>
+                						<input type="radio" name="Crylical" id="input" value="" checked="checked">
+                						<label class="fw300" for="">Да</label>
+                						<input type="radio" name="Crylical" id="input" value="" >
+               							<label class="fw300" for="">Нет</label>				
+		                			</div>
+		                		<!-- radio-select -->
+	                		</div>
+	                	<!-- left-column -->
+
+	                	<!-- Right-column -->
+	                		<div class="col-md-6">
+	                			<!-- item-date-event -->
+		                			<label for="">Дата планового пересмотра:</label>
+		                			<input type="text" class="form-control date-event"  >
+		                		<!-- item-date-event -->
+		                		
+		                		<!-- item-select -->
+		                			<label for="" class="mt85">Пользователь:  </label>
+		                			<select name="" class="form-control" required="required">
+		                				<option value=""></option>
+		                			</select>
+		                		<!-- item-select -->
+												
+												<label for="">Время предоставления</label>
+		                		<div class="inline-input-row">
+			                		<input type="checkbox" value="">
+			                		<label>Время не меняется ежедневно.</label>
+		                		</div>
+												
+												<!-- inline-input-row-datepick -->
+			                		<div class="inline-input-row-datepick">
+			                			<label >Сервис доступен с </label> 
+			                			<input type="text" name="" id="" class="form-control date-event-hours" value=""  >
+				                			<label >до</label> 
+				                			<input type="text" name="" id="" class="form-control date-event-hours" value=""  >
+			                		</div>
+												<!-- inline-input-row-datepick -->
+
+		                		<div class="inline-input-row">
+			                		<input type="checkbox" value="">
+			                		<label>Время изменяется по дням недели:</label>
+		                		</div>
+
+												<!-- Group-date-select -->
+												<div class="group-date-select">
+		                			<div class="inline-input-row-datepick">
+		                			<!-- item-row -->
+		                				<input type="checkbox" value="">
+			                			<label class="inline-input-row-datepick-date">Пн</label> 
+			                			<label >c</label> 
+			                			<input type="text" name="" id="" class="form-control date-event-hours" value=""  >
+				                			<label >до</label> 
+				                			<input type="text" name="" id="" class="form-control date-event-hours" value=""  >
+		                			<!-- item-row -->
+		                			</div>
+
+													<div class="inline-input-row-datepick">
+		                			<!-- item-row -->
+		                				<input type="checkbox" value="">
+			                			<label class="inline-input-row-datepick-date">Вт</label> 
+			                			<label >c</label> 
+			                			<input type="text" name="" id="" class="form-control date-event-hours" value=""  >
+				                			<label >до</label> 
+				                			<input type="text" name="" id="" class="form-control date-event-hours" value=""  >
+		                			<!-- item-row -->
+		                			</div>
+
+													<div class="inline-input-row-datepick">
+		                			<!-- item-row -->
+		                				<input type="checkbox" value="">
+			                			<label class="inline-input-row-datepick-date">Ср</label> 
+			                			<label >c</label> 
+			                			<input type="text" name="" id="" class="form-control date-event-hours" value=""  >
+				                			<label >до</label> 
+				                			<input type="text" name="" id="" class="form-control date-event-hours" value=""  >
+		                			<!-- item-row -->
+		                			</div>
+
+													<div class="inline-input-row-datepick">
+		                			<!-- item-row -->
+		                				<input type="checkbox" value="">
+			                			<label class="inline-input-row-datepick-date">Чт</label> 
+			                			<label >c</label> 
+			                			<input type="text" name="" id="" class="form-control date-event-hours" value=""  >
+				                			<label >до</label> 
+				                			<input type="text" name="" id="" class="form-control date-event-hours" value=""  >
+		                			<!-- item-row -->
+		                			</div>
+
+													<div class="inline-input-row-datepick">
+		                			<!-- item-row -->
+		                				<input type="checkbox" value="">
+			                			<label class="inline-input-row-datepick-date">Пт</label> 
+			                			<label >c</label> 
+			                			<input type="text" name="" id="" class="form-control date-event-hours" value=""  >
+				                			<label >до</label> 
+				                			<input type="text" name="" id="" class="form-control date-event-hours" value=""  >
+		                			<!-- item-row -->
+		                			</div>
+
+													<div class="inline-input-row-datepick">
+		                			<!-- item-row -->
+		                				<input type="checkbox" value="">
+			                			<label class="inline-input-row-datepick-date">Сб</label> 
+			                			<label >c</label> 
+			                			<input type="text" name="" id="" class="form-control date-event-hours" value=""  >
+				                			<label >до</label> 
+				                			<input type="text" name="" id="" class="form-control date-event-hours" value=""  >
+		                			<!-- item-row -->
+		                			</div>
+
+													<div class="inline-input-row-datepick">
+		                			<!-- item-row -->
+		                				<input type="checkbox" value="">
+			                			<label class="inline-input-row-datepick-date">Вс</label> 
+			                			<label >c</label> 
+			                			<input type="text" name="" id="" class="form-control date-event-hours" value=""  >
+				                			<label >до</label> 
+				                			<input type="text" name="" id="" class="form-control date-event-hours" value=""  >
+		                			<!-- item-row -->
+		                			</div>
+		                		</div>
+												<!-- Group-date-select -->
+
+	                		</div>
+	                	<!-- Right-column -->
+	                	</div>
+
+	                	<!-- icon-line -->
+			                <div class="flex-start ">
+			                  <button type="button" class="btn btn-danger mr20">Сохранить</button>
+			                  <button type="button" class="btn btn-primary mr20">Сохранить</button>
+			                  <button type="button" class="btn btn-primary mr20">Сохранить и закрыть</button>
+			                </div>
+		                <!-- icon-line -->
+								</div>
+								<div class="col-md-4 main-cont-right-wraper-right">
+									<div class="main-cont-right-wraper-right">
+										<div class="rightpart-table">
+											<!-- rightpart-table-head -->
+												<div class="rightpart-table-head">
+													 <div class="rightpart-table-head-icon IconHistoryHover30"></div>
+													 <div class="rightpart-table-head-text">
+													 	<a href="#" class="blue-text">Перейти к  просмотру журнала изменений</a>
+													 </div>
+												</div>
+											<!-- rightpart-table-head -->
+											<table class="table table-hover table-striped">
+												<thead>
+													<tr>
+														<th>Дата и время</th>
+														<th>Тип изменения</th>
+														<th>Изменяемый параметр</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>28.11.2015 15:36 </td>
+														<td>Создание</td>
+														<td><a href="#">Первый изменяемый параметр</a></td>
+													</tr>
+													<tr>
+														<td>28.11.2015 15:36 </td>
+														<td>Создание</td>
+														<td><a href="#">Первый изменяемый параметр</a></td>
+													</tr>
+													<tr>
+														<td>28.11.2015 15:36 </td>
+														<td>Создание</td>
+														<td><a href="#">Первый изменяемый параметр</a></td>
+													</tr>
+													<tr>
+														<td>28.11.2015 15:36 </td>
+														<td>Создание</td>
+														<td><a href="#">Первый изменяемый параметр</a></td>
+													</tr>
+													<tr>
+														<td>28.11.2015 15:36 </td>
+														<td>Создание</td>
+														<td><a href="#">Первый изменяемый параметр</a></td>
+													</tr>
+													<tr>
+														<td>28.11.2015 15:36 </td>
+														<td>Создание</td>
+														<td><a href="#">Первый изменяемый параметр</a></td>
+													</tr>
+													<tr>
+														<td>28.11.2015 15:36 </td>
+														<td>Создание</td>
+														<td><a href="#">Первый изменяемый параметр</a></td>
+													</tr>
+													<tr>
+														<td>28.11.2015 15:36 </td>
+														<td>Создание</td>
+														<td><a href="#">Первый изменяемый параметр</a></td>
+													</tr>
+													<tr>
+														<td>28.11.2015 15:36 </td>
+														<td>Создание</td>
+														<td><a href="#">Первый изменяемый параметр</a></td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+							</div>
+	           
+					</div>	
+      	</div>
+      <div class="clearfix"></div>
+      <!-- main-cont-right -->
+     
+    </div>
+  </div>
+</div> 
+ 
+
+
+@@include('script.html') 
+</body>
+</html>
+
+
+

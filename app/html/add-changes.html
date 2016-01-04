@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+@@include('head.html') 
+</head>
+<body>
+
+<!-- head -->
+@@include('head-block.html') 
+<!-- head -->
+
+<div class="main-cont">
+  <div class="container-fluid">
+    <div class="row">
+      
+      <!-- main-cont-left -->
+      	@@include('left-menu.html') 
+      <!-- main-cont-left -->
+      
+      <div class="col-md-1 col-sm-1 col-xs-1 "></div> 
+      <!-- main-cont-right -->
+        <div class="main-cont-right col-md-11 col-md-11 col-sm-11 col-xs-11">
+						<div class="main-cont-right-wraper">
+
+	            <!-- breadcrumb -->
+	            	@@include('breadcrumb-table.html')
+	            <!-- breadcrumb -->
+	            
+							<div class="row row-flex">
+								<div class="col-md-8 main-cont-right-wraper-left">
+
+	                	<!-- top-part-form -->
+
+	                			<!-- item-select -->
+		                			<div class="w60per mt40">
+		                				<label for="">Тип предложения:</label>
+		                				<select name="" class="form-control" required="required">
+		                					<option value="">Новая</option>
+		                				</select>
+		                			</div>
+		                		<!-- item-select -->
+
+		                		<!-- item-select -->
+		                			<div class="w60per">
+		                				<label for="">Корректируемый параметр:</label>
+		                				<select name="" class="form-control" required="required">
+		                					<option value="">Новая</option>
+		                				</select>
+		                			</div>
+		                		<!-- item-select -->
+
+												<!-- item-input -->
+												<div class="w80per">
+			                		<label for="">Описание предложения:</label>
+		                			<textarea  class="form-control" rows="3" required="required"></textarea>
+		                		</div>
+												<!-- item-input -->
+
+												<!-- item-input -->
+												<div class="w60per">
+			                		<label for="">Дата поступления предложения: </label>
+		                			<input type="text" class="form-control " id="date-event-one" >
+	                			</div>
+												<!-- item-input -->
+
+												<!-- item-select -->
+		                			<div class="w60per">
+		                				<label for="">Подразделение-инициатор:</label>
+		                				<select name="" class="form-control" required="required">
+		                					<option value="">Новая</option>
+		                				</select>
+		                			</div>
+		                		<!-- item-select -->
+
+		                		<!-- item-select -->
+		                			<div class="w60per">
+		                				<label for="">Статус предложения: </label>
+		                				<select name="" class="form-control" required="required">
+		                					<option value="">Новая</option>
+		                				</select>
+		                			</div>
+		                		<!-- item-select -->
+
+		                		<!-- item-input -->
+		                		<div class="w80per">
+			                		<label for="">Комментарий:</label>
+		                			<textarea  class="form-control" rows="3" required="required"></textarea>
+		                		</div>
+												<!-- item-input -->
+
+												<!-- item-input -->
+												<div class="w80per">
+			                		<label for="">Резюме:</label>
+		                			<textarea  class="form-control" rows="3" required="required"></textarea>
+		                		</div>
+												<!-- item-input -->
+	                	<!-- top-part-form -->
+
+	                	<!-- icon-line -->
+			                <div class="flex-start ">
+			                  <button type="button" class="btn btn-danger mr20">Сохранить</button>
+			                  <button type="button" class="btn btn-primary mr20">Сохранить</button>
+			                  <button type="button" class="btn btn-primary mr20">Сохранить и закрыть</button>
+			                </div>
+		                <!-- icon-line -->
+								</div>
+								
+							</div>
+					</div>	
+      	</div>
+      <div class="clearfix"></div>
+      <!-- main-cont-right -->
+     
+    </div>
+  </div>
+</div> 
+ 
+
+
+@@include('script.html') 
+</body>
+</html>
+
+
+
